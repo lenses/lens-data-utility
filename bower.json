@@ -5,7 +5,7 @@
   "main": "lens-u-data-utility.html",
   "dependencies": {
     "polymer": "Polymer/polymer#~0.5.1",
-    "lodash": "lodash/lodash#~3.3.1",
+    "lodash": "lodash/lodash#~3.5.0",
     "numeral": "adamwdraper/Numeral-js#~1.5.3",
     "moment": "moment/moment#~2.9.0",
     "core-component-page" : "Polymer/core-component-page#^0.5.5"

@@ -121,6 +121,15 @@ This component does not have a UI and is meant to be included inside of other co
         return ret;
       },
 
+      formatNumber: function(number, format) {
+        if(format) {
+          //replace # (google charts number format) to 0 (numeral number format)
+          format = format.replace(/#/g,'0');
+          return numeral(number).format(format);
+        }
+        return number;
+      },
+
       parseDate: function(str) {
         var date = moment(str);
         return date.isValid() ? date : null;

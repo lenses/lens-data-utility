@@ -15,7 +15,7 @@ This component does not have a UI and is meant to be included inside of other co
 @homepage http://thelmanews.github.io/lens-u-data-utility
 -->
 
-<polymer-element name="lens-u-data-utility" attributes="">
+<dom-module id="lens-u-data-utility" attributes="">
 
   <script src="../lodash/lodash.js"></script>
   <script src="../numeral/numeral.js"></script>
@@ -23,7 +23,8 @@ This component does not have a UI and is meant to be included inside of other co
 
   <script>
     Polymer({
-      aggregateFunctions: {
+	is: 'lens-u-data-utility',    
+	aggregateFunctions: {
         /*
         'min': function(data, feild) {
           return _.chain(data)
@@ -194,4 +195,4 @@ This component does not have a UI and is meant to be included inside of other co
       }
     });
   </script>
-</polymer-element>
+</dom-module>
